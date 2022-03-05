@@ -33,7 +33,7 @@ public class CoronaVirusDataService {
 
 
 	@PostConstruct
-	@Scheduled(cron = "* * 1 * * *")
+	@Scheduled(cron = "* * * * * 1")
 	public void fetchVirusData() throws IOException, InterruptedException, ServletException {
 		
 		List<LocationStats> newStats = new ArrayList<>(); 
